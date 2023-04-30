@@ -38,21 +38,21 @@
 		>Cool Nakul's Website
 	</h1>
 	<ul>
-		<li><a href="app.html">Home</a></li>
-		<li><a href="">Explore</a></li>
-		<li><a href="">About</a></li>
+		<li><a href="/dynamo">Home</a></li>
+		<li><a href="#">Explore</a></li>
+		<li><a href="#">About</a></li>
 		<li>
-			<a href="">Shop</a>
+			<a href="#">Shop</a>
 			<ul>
-				<li><a href="">Cards</a></li>
-				<li><a href="">Games</a></li>
-				<li><a href="">Other</a></li>
+				<li><a href="#">Cards</a></li>
+				<li><a href="#">Games</a></li>
+				<li><a href="#">Other</a></li>
 			</ul>
 		</li>
 		<li><a href="dynamo.html">Create Your Own</a></li>
 		<li>
 			<a
-				href=""
+				href="#"
 				class="money">$0</a
 			>
 		</li>
@@ -77,6 +77,7 @@
 	</ul>
 	<a
 		class="link"
+		target="_blank"
 		href="https://pokemon-cards.nakulkumar3.repl.co/cards.html"
 	>
 		Pokemon Card Website I made!</a
