@@ -1,6 +1,7 @@
 <script lang="js">
-	export const ssr = false;
+	import "./nakul.css";
 	import { onMount } from "svelte";
+	export const ssr = false;
 
 	onMount(() => {
 		// When the duck is clicked it will add the duck to the grapes class to animate
@@ -23,6 +24,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Cool Nakul's Website</title>
+</svelte:head>
 <nav class="title">
 	<h1>
 		<a href="#"
