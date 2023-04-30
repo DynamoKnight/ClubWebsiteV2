@@ -1,8 +1,6 @@
 <script lang="js">
 	import "./nakul.css";
 	import { onMount } from "svelte";
-	export const ssr = false;
-
 	onMount(() => {
 		// When the duck is clicked it will add the duck to the grapes class to animate
 		const duck = document.getElementById("duck");
