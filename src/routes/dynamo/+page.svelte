@@ -7,8 +7,10 @@
 <script lang="js">
 	// Sets server-side rendering to false, meaning the java code will render on the client rather than the server.
 	export const ssr = false;
+	import "./nakul.css";
 	import { onMount } from "svelte";
 	// Loads js only after the html page is rendered
+
 	onMount(() => {
 		// When the duck is clicked it will add the duck to the grapes class to animate
 		const duck = document.getElementById("duck");
@@ -217,21 +219,21 @@
 		>Cool Nakul's Website
 	</h1>
 	<ul>
-		<li><a href="app.html">Home</a></li>
-		<li><a href="">Explore</a></li>
-		<li><a href="">About</a></li>
+		<li><a href="/dynamo">Home</a></li>
+		<li><a href="#">Explore</a></li>
+		<li><a href="#">About</a></li>
 		<li>
-			<a href="">Shop</a>
+			<a href="#">Shop</a>
 			<ul>
-				<li><a href="">Cards</a></li>
-				<li><a href="">Games</a></li>
-				<li><a href="">Other</a></li>
+				<li><a href="#">Cards</a></li>
+				<li><a href="#">Games</a></li>
+				<li><a href="#">Other</a></li>
 			</ul>
 		</li>
 		<li><a href="dynamo.html">Create Your Own</a></li>
 		<li>
 			<a
-				href=""
+				href="#"
 				class="money">$0</a
 			>
 		</li>
@@ -253,6 +255,7 @@
 	</ul>
 	<a
 		class="link"
+		target="_blank" rel="noreferrer"
 		href="https://pokemon-cards.nakulkumar3.repl.co/cards.html"
 	>
 		Pokemon Card Website I made!</a

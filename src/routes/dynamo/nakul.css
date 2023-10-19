@@ -1,0 +1,557 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    background: black;
+  }
+  
+  nav ul{
+    float: none;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  nav *{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav h1 {
+    display:flex;
+    align-items: center;
+  }
+  nav a{
+    padding: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  
+  nav a:hover{
+    background: #1ccef2;
+  }
+  
+  nav li > ul{display:none;}
+  
+  nav li:hover > ul{
+    display:block;
+    position: absolute;
+    background: #1ccef2;
+  }
+  
+  /*Text styling*/
+  /*Make sure it Does not cover whole page*/
+  .john{
+    border: 5px solid black;
+    object-fit: cover;
+    position: relative;
+    width: 250px;
+    height: 260px;
+    margin: 20px;
+  }
+  .resume {
+    display: grid;
+    grid-auto-flow: row;
+    place-items: space-evenly;
+    grid-template-columns: 100%;
+    justify-items: center;
+    padding: 100px;
+    text-align: center;
+  }
+  .resume p{
+    width: 60%;
+    padding: 20px;
+  }
+  .link{
+    color:rgb(10, 98, 187);
+    text-decoration-line: underline;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  
+  
+  /*Featured*/
+  .featured{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /*Pokemon Card Styling*/
+  
+  /*Put all the cards in a Flexbox*/
+  body.cards main{
+    display: grid;
+    grid-auto-flow: row;
+    place-items: space-evenly;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    row-gap: 100px;
+  }
+  
+  /*Inital Card Properties*/
+  .card {
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 450px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('bWhite.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 20px solid #f1d209;
+    text-align: center;
+    padding: 1em;
+    border-radius: 20px;
+    margin: 50px;
+  }
+  
+  /*Colors and Background for each Pokémon*/
+  #Pikachu.card{
+    background-image: url('bYellow.png');
+  }
+  /*Creates Flexbox for Top*/
+  .card .char-name{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+  }
+  
+  /*Properties of Pokémon Stage*/
+  .evolution{
+    background: #ece4e4;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  /*Properties of Pokémon Name*/
+  .name{
+    width:200px;
+    font-size:25pt;
+    font-weight:bold;
+  }
+  
+  /*Properties of Pokémon Type*/
+  .type{
+    width:25px;
+    float:right;
+  }
+  
+  /*Places to the right side(Since there's no justify-self :/ )*/
+  .type,.HP{
+    margin-left: auto;
+  }
+  
+  /*Adds Border*/
+  .char-img img{
+    width: 380px;
+    border: 5px solid #f0ebeb;
+  }
+  
+  /*Character meta*/
+  
+  .meta{
+    font-size: 9.5pt;
+    background: #ece4e4;
+    border: 2px solid black;
+    color: black;
+  }
+  
+  
+  /*Creates Flexbox for Moves*/
+  .move1,.move2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 50px;
+  }
+  
+  /*Font size of the move name*/
+  .char-move{
+    font-size: 15pt;
+    font-weight: bold;
+  }
+  
+  /*Alignment of Stats*/
+  .stat{
+    text-align: left;
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.6);
+    margin-top: -10px;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 20px 16px;
+  }
+  
+  /*When Screen gets smaller*/
+  @media screen and (max-width: 1024px) {
+    body.cards main{
+      grid-template-columns: 100%;
+    }
+    .title{
+      flex-direction: column;
+    }
+  }
+  
+  /*Duck Song*/
+  
+  /*BACKGROUND*/
+  .comic1{
+    display: block;
+    background: rgb(195,234,255);
+    background: linear-gradient(180deg, rgba(195,234,255,1) 35%, rgba(0,212,255,1) 100%);
+    border: 10px solid black;
+    position: relative;
+    height:550px; width:1200px;
+    text-align: center;
+    margin: 50px;
+  }
+  form{
+    box-shadow: 2px 5px 10px 2px rgba(0,0,0,0.5);
+    width: 600px;
+    padding: 2rem;
+    margin: 0.125rem;
+  }
+  form label{
+    display:block;
+  }
+  /*DUCK*/
+  .duck{
+    transform: scale(0.7,0.7);
+    background: yellow;
+    border: 3px solid black;
+    height: 10rem;
+    width: 8rem;
+    position: absolute;
+    /*display: inline-block;*/
+    bottom: 8px;
+    left: 10%;
+    margin-left: -4rem;
+    z-index: 3;
+  }
+  
+  .duck > .head{
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 14rem;
+    height: 14rem;
+    background: yellow;
+    box-shadow: rgba(255,0,0,0.5) 1rem 2rem 3rem -1rem;
+    position: relative;
+    top: -14rem;
+    margin-left: -3rem;
+    z-index: 3;
+  }
+  .beak{
+    border: 3px solid black;
+    border-radius: 50% 20% 100% 30%;
+    width: 8rem;
+    height: 8rem;
+    background: orange;
+    position: absolute;
+    top: 5rem;
+    transform: rotate(45deg);
+    left:0;
+    z-index: 3;
+    /*border-right: 2rem solid yellow;*/
+  }
+  
+  .eye1, .eye2{
+    display: block;
+    border-radius: 50%;
+    height:5rem;
+    width: 5rem;
+    background: black;
+    border: 1rem solid white;
+    z-index: 4;
+  }
+  .eye1:after, .eye2:after{
+    content: "";
+    display:block;
+    border-radius: 50%;
+    height:1rem;
+    width: 1rem;
+    background: rgba(200,200,200,0.9);
+    z-index: 3;
+    
+  }
+  .eye1{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+  .eye2{
+    position: absolute;
+    left: 120px;
+    top: 20px;
+  }
+  
+  .foot1,.foot2{
+    border: 3px solid black;
+    display: block;
+    background: orange;
+    z-index: 3;
+  
+  }
+  
+  .foot1{
+    position: absolute;
+    width: 30px; 
+    height: 50px;
+    bottom: -50px; 
+    left: 0;
+  }
+  
+  .foot2{
+    position: absolute;
+    width: 30px; 
+    height: 50px;
+    bottom: -50px; 
+    left: 98px;
+  }
+  
+  .tail{
+    border: 3px solid black;
+    position:absolute;
+    display: block;
+    background: yellow;
+    width: 140px;
+    height: 100px;
+    border-radius: 50% 20% 20% 50%;
+    top: 40px;
+    left: 110px;
+    z-index: 3;
+  }
+  
+  .dialogue{
+    position: absolute;
+    display: block;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50% 50% 50% 0%;
+    width: 200px;
+    height: 150px;
+    left: 200px;
+    top: -300px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 3;
+  }
+  
+  /*DUCK MOVES*/
+  .duck.grapes .eye1, .duck.grapes .eye2{
+    background: purple;
+  }
+  
+  .duck.grapes{
+    animation-duration:3s;
+    animation-name:move;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes move{
+    from{
+      left:10%;
+    }
+    to{
+      left:45%;
+    }
+  }
+  /*LEMONADE STAND*/
+  .storage{
+    background: saddlebrown;
+    height: 11rem;
+    width: 30rem;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    margin-left: -4rem;
+    z-index:2;
+  
+    font-size: 6em;
+    text-align: center;
+  }
+  .supportbeam1{
+    background: brown;
+    height: 25rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 0px;
+    right: 42.4%;
+    margin-left: -4rem;
+    z-index:2;
+  
+    font-size: 6em;
+    text-align: center;
+  }
+  .supportbeam2{
+    background: brown;
+    height: 25rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    margin-left: -4rem;
+    z-index:2;
+  
+    font-size: 6em;
+    text-align: center;
+  }
+  .sign{
+    background: saddlebrown;
+    height: 8rem;
+    width: 33rem;
+    position: absolute;
+    top: 30px;
+    right: 3%;
+    margin-left: -4rem;
+    z-index:2;
+  
+    font-size: 6em;
+    text-align: center;
+  }
+  
+  /*MAN*/
+  
+  .man{
+    background: blue;
+    height: 9rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 90px;
+    right: 25%;
+    margin-left: -4rem;
+    z-index:1;
+  }
+  
+  .manHead{
+    background: peachpuff;
+    border: 3px solid black;
+    border-radius: 50%;
+    height: 9rem;
+    width: 8rem;
+    position: absolute;
+    /*display: inline-block;*/
+    bottom: 140px;
+    left: 40%;
+    margin-left: -4rem;
+    z-index: 3;
+  }
+  
+  .manMouth{
+    background: black;
+    border: 3px solid black;
+    border-radius: 100%;
+    height: 2rem;
+    width: 4rem;
+    position: absolute;
+    /*display: inline-block;*/
+    bottom: 10px;
+    left: 70%;
+    margin-left: -4rem;
+    z-index: 4;
+  }
+  .manEye1, .manEye2{
+    transform: scale(0.4,0.4);
+    display: block;
+    border-radius: 50%;
+    height:5rem;
+    width: 5rem;
+    background: black;
+    border: 1rem solid white;
+    z-index: 4;
+  }
+  
+  .manEye1{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+  }
+  .manEye2{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+  
+  
+  /*The Home screen image carousel*/
+  .carousel{
+    display: block;
+    background-color:beige;
+    border: 10px solid black;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position-y: bottom;
+    filter: brightness(80%);
+    z-index: 989;
+  
+  }
+  
+  .icons{
+    font-family: "Material Icons";
+    font-style: normal;
+    transition: 0.4s ease;
+  
+  }
+  
+  .carousel .icons{
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 150px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    z-index: 990;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  
+  .carousel .icons:hover{
+    cursor: pointer;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.6);
+    margin-top: -10px;
+    filter:brightness(100%) !important;
+  }
+  
+  
+  #prevbtn, #nextbtn{
+    cursor: pointer;
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url("downarrow.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat; 
+  }
+  
+  #prevbtn{
+    position: relative;
+    left: 25%;
+    top: 170px;
+    rotate: 90deg;
+  }
+  #nextbtn{
+    position: relative;
+    left: 72%;
+    top: 120px;
+    rotate: -90deg;
+  }
